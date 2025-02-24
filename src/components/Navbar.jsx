@@ -1,23 +1,25 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 function Navbar() {
   return (
-    <div >
-      <header className="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+    <div>
+      <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
+  <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a className="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>
-      <span class="ml-3 text-2xl font-bold">PakCarry</span>
+      <span className="ml-3 text-xl" style={{color:'oklch(0.627 0.194 149.214)'}}>Pak</span>
+      <span className="text-xl" style={{color:'white'}}>Carry</span>
     </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 text-black hover:text-gray-900 mx-3">Home</a>
-      <a class="mr-5 text-black hover:text-gray-900 mx-3">About Us</a>
-      <a class="mr-5 text-black hover:text-gray-900 mx-3">Contact</a>
-      <a class="mr-5 text-black hover:text-gray-900 mx-3">Feedback</a>
+    <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center" style={{color:'white'}}>
+      <Link to="/" className="nav-link mr-5 mx-3">Home</Link>
+      <Link to="/AboutUs" className="nav-link mr-5 mx-3">About Us</Link>
+      <Link to="/Contact" className="nav-link mr-5 mx-3">Contact</Link>
+      <Link to="/Feedback" className="nav-link mr-5 mx-3">Feedback</Link>
     </nav>
-    <button class="inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-3" style={{color:"oklch(0.696 0.17 162.48)"}}>Login/Register </button>
+    <button className="inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mx-3" style={{color:"oklch(0.696 0.17 162.48)"}}>Login/Register </button>
+      
   </div>
 </header>
     </div>
@@ -25,3 +27,17 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
