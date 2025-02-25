@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
+import { useNavigate } from "react-router-dom";
 import { FaLock } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
@@ -8,7 +8,7 @@ const SignIn = ({ isOpen, onClose }) => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-  const navigate = useNavigate(); // ✅ Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const validatePhone = (value) => {
     const phoneRegex = /^[0-9]{10}$/;
@@ -41,7 +41,7 @@ const SignIn = ({ isOpen, onClose }) => {
     e.preventDefault();
     if (validatePhone(phone) && validatePassword(password)) {
       console.log("Form submitted");
-      navigate("/profile"); // ✅ Navigate to profile page after login
+      navigate("/profile"); 
     } else {
       console.log("Validation errors", errors);
     }
@@ -108,8 +108,6 @@ const SignIn = ({ isOpen, onClose }) => {
         <p className="text-center text-gray-500 mt-3">
           Don’t have an account? <span className="text-[#0ac6ae] cursor-pointer hover:underline">Sign Up</span>
         </p>
-
-        {/* ✅ Back to Home - Navigates to Home Page */}
         <p
           className="text-center mt-4 cursor-pointer hover:underline text-[#0ac6ae]"
           onClick={() => navigate("/")}

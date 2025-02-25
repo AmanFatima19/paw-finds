@@ -1,21 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const lastScrollY = useRef(0); // Use useRef to track scroll position without re-renders
+  const [menuOpen, setMenuOpen] = useState(false); 
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setIsVisible(false); // Hide when scrolling down
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // Show when scrolling up
+        setIsVisible(true);
       }
 
-      lastScrollY.current = currentScrollY; // Update the last scroll position
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,7 +42,48 @@ const Navbar = () => {
         <Link to="/about" className="hover:text-gray-400 links">About Us</Link>
         <Link to="/contact" className="hover:text-gray-400 links">Contact</Link>
         <Link to="/feedback" className="hover:text-gray-400 links">Feedback</Link>
-        {/* <Link to="/medicines" className="hover:text-gray-400 links">Medicines</Link> */}
+      </nav>
+
+      <button
+        className="md:hidden absolute top-4 right-6 text-2xl focus:outline-none"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <nav
+        className={`md:hidden flex flex-col items-center bg-white w-full py-4 space-y-4 text-lg ${
+          menuOpen ? "block" : "hidden"
+        }`}
+      >
+        <Link
+          to="/"
+          className="text-black no-underline hover:text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="text-black no-underline hover:text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          About Us
+        </Link>
+        <Link
+          to="/contact"
+          className="text-black no-underline hover:text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Contact
+        </Link>
+        <Link
+          to="/feedback"
+          className="text-black no-underline hover:text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Feedback
+        </Link>
       </nav>
     </header>
   );
