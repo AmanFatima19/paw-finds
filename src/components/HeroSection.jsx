@@ -48,7 +48,7 @@ function HeroSection() {
         >
           <button
             onClick={() => setSignInOpen(true)}
-            className="bg-[#0ac6ae] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#089f8d] transition underline mt-6"
+            className="bg-[#0ac6ae] text-white px-8 py-3 text-lg font-semibold hover:bg-[#089f8d] transition underline mt-6"style={{borderRadius:'10px'}}
           >
             Login/Register
           </button>
