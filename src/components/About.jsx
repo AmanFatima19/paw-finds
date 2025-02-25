@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutDescription() {
+function About() {
   return (
     <div>
       <section class="text-gray-600 body-font overflow-hidden ml-20">
@@ -14,6 +14,7 @@ function AboutDescription() {
             <div className="lg:w-2/3 w-full lg:py-6 lg:mt-0 pl-10">
               <h2
                 style={{
+                    marginTop:'10px',
                   fontWeight: "700",
                   color: "black",
                   fontSize: "30px"
@@ -24,7 +25,7 @@ function AboutDescription() {
 
               <p
                 
-                style={{ fontSize: "17px"}}
+                style={{ fontSize: "17px" ,paddingRight:'70px'}}
               >
                 PakCarry is a peer-to-peer, traveler-based package delivery
                 platform designed to revolutionize urban and inter-city
@@ -64,4 +65,4 @@ function AboutDescription() {
   );
 }
 
-export default AboutDescription;
+export default About;

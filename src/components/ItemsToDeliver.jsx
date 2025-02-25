@@ -9,7 +9,7 @@ const items = [
 function ItemsToDeliver() {
   return (
     <div className="py-16 bg-white text-center">
-        <h2 className="text-4xl text-center" style={{fontWeight:'700'}}>Item To Deliver</h2>
+        <h2 className="text-4xl text-center" style={{fontWeight:'700'}}>Items To Deliver</h2>
         <p className="text-gray-600 mt-2" style={{ fontSize: '17px' }}>
         Send or receive parcels using our PakCarry service
       </p>
