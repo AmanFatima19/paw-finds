@@ -37,10 +37,10 @@ const Navbar = () => {
 
       <nav className="hidden md:flex justify-center space-x-6 text-lg py-2">
         <Link to="/" className="hover:text-gray-800 links">Home</Link>
-        <Link to="/luggage" className="hover:text-gray-400 links">Luggage</Link>
-        <Link to="/documents" className="hover:text-gray-400 links">Documents</Link>
-        <Link to="/lightparcels" className="hover:text-gray-400 links">Light Parcels</Link>
-        <Link to="/medicines" className="hover:text-gray-400 links">Medicines</Link>
+        <Link to="/about" className="hover:text-gray-400 links">About Us</Link>
+        <Link to="/contact" className="hover:text-gray-400 links">Contact</Link>
+        <Link to="/feedback" className="hover:text-gray-400 links">Feedback</Link>
+        {/* <Link to="/medicines" className="hover:text-gray-400 links">Medicines</Link> */}
       </nav>
     </header>
   );

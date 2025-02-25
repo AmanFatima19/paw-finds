@@ -12,9 +12,9 @@ function GuaranteeSection () {
   ];
 
   return (
-    <section className="py-16 px-16 bg-white">
+    <section className="py-10 px-16 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl text-center" style={{fontWeight:'700',marginBottom:'70px'}}>Guarantees</h2>
+        <h2 className="text-4xl text-center" style={{fontWeight:'700',marginBottom:'80px'}}>Guarantees</h2>
         <div className="grid md:grid-cols-2 gap-10">
           {guarantees.map((item, index) => (
             <div key={index} className="flex items-start space-x-4">

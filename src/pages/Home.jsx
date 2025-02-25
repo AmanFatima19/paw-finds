@@ -5,7 +5,7 @@ import AboutDescription from '../components/AboutDescription'
 import GuaranteeSection from '../components/GuaranteeSection'
 import FaqSection from '../components/FaqSection'
 import HowItWorks from '../components/HowItWorks'
-
+import ItemsToDeliver from '../components/ItemsToDeliver'
 
 
 function Home() {
@@ -15,9 +15,11 @@ function Home() {
     <HeroSection />
     <Countup />
     <AboutDescription />
-    <GuaranteeSection />
+    <ItemsToDeliver />
     <HowItWorks />
+    <GuaranteeSection />
     <FaqSection />
+
   </div>
 
   )

@@ -5,28 +5,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Luggage from './pages/Luggage';
-import Documents from './pages/Documents';
-import LightParcels from './pages/LightParcels';
-import Medicines from './pages/Medicines';
-import LoginForm from './components/LoginForm';
+import AboutUs from './pages/AboutUs'
+import Contact from './pages/Contact'
 import Feedback from './pages/Feedback';
-
+import Footer from './components/Footer';
+import SignIn from './components/SignIn'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/luggage" element={<Luggage />} />
-          <Route path="/documents" element={<Documents />} />
-          <Route path="/lightparcels" element={<LightParcels />} />
-          <Route path="/medicines" element={<Medicines />} />
-          <Route path="/loginform" element={<LoginForm />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
+          <Route path="/loginpage" element={<SignIn />} />   
         </Routes>
-      </div>
+        <Footer />
     </Router>
   </StrictMode>
 );
