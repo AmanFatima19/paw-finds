@@ -45,7 +45,7 @@ function FaqSection() {
             <Accordion.Item eventKey="5">
               <Accordion.Header>What items are prohibited for delivery via PakCarry?</Accordion.Header>
               <Accordion.Body>
-                PakCarry strictly prohibits the delivery of illegal, hazardous, or restricted items. This includes weapons, explosives, drugs, counterfeit goods, perishable items, and any substances banned by local or international regulations. Users must comply with the destination country’s legal requirements to ensure safe and lawful delivery.
+                PakCarry strictly prohibits the delivery of illegal, hazardous, or restricted items. This includes weapons, explosives, drugs, counterfeit goods, perishable items, and any substances banned by city regulations. Users must comply with the destination city's legal requirements to ensure safe and lawful delivery.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

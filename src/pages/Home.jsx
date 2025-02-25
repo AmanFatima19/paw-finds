@@ -4,6 +4,8 @@ import Countup from '../components/Countup'
 import AboutDescription from '../components/AboutDescription'
 import GuaranteeSection from '../components/GuaranteeSection'
 import FaqSection from '../components/FaqSection'
+import HowItWorks from '../components/HowItWorks'
+
 
 
 function Home() {
@@ -14,8 +16,8 @@ function Home() {
     <Countup />
     <AboutDescription />
     <GuaranteeSection />
+    <HowItWorks />
     <FaqSection />
-    
   </div>
 
   )

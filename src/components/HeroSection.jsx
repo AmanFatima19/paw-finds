@@ -16,7 +16,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl font-medium"
+            className="text-5xl font-bold"
           >
             SEND PACKAGES ACROSS PAKISTAN
           </motion.h1>
