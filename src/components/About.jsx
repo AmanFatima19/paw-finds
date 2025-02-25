@@ -2,59 +2,45 @@ import React from "react";
 
 function About() {
   return (
-    <div>
-      <section class="text-gray-600 body-font overflow-hidden ml-20">
-        <div class="py-6">
-          <div class="lg:w-[100] flex">
-            <img
-              alt="same-day delivery"
-              className="lg:w-[650px] w-full lg:h-[570px] rounded"
-              src="about-img.jpg"
-            />
-            <div className="lg:w-2/3 w-full lg:py-6 lg:mt-0 pl-10">
-              <h2
-                style={{
-                    marginTop:'10px',
-                  fontWeight: "700",
-                  color: "black",
-                  fontSize: "30px"
-                }}
-              >
+    <div className="w-[88%] mx-auto">
+      <section className="text-gray-600 body-font overflow-hidden">
+        <div className="py-6">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start">
+            {/* Image Section - Left */}
+            <div className="lg:w-1/2 w-full">
+              <img
+                alt="same-day delivery"
+                className="w-full max-w-[650px] lg:h-[570px] rounded"
+                src="about-img.jpg"
+              />
+            </div>
+
+            {/* Text Section - Right */}
+            <div className="lg:w-1/2 w-full lg:pl-10 mt-10 lg:mt-0">
+              <h2 className="text-2xl sm:text-4xl font-bold text-black pt-10">
                 About PakCarry Services
               </h2>
 
-              <p
-                
-                style={{ fontSize: "17px",paddingRight:'70px'}}
-              >
+              <p className="text-base sm:text-lg mt-3 pr-4 lg:pr-16">
                 PakCarry is a peer-to-peer, traveler-based package delivery
                 platform designed to revolutionize urban and inter-city
                 logistics in Pakistan. The platform connects individuals and
                 businesses with verified travelers who are already traveling to
                 their desired destinations.
-                
+              </p>
+
+              <p className="mt-4 text-base sm:text-lg pr-4 lg:pr-16">
                 PakCarry provides a convenient online service for finding
                 fellow-travelers who can deliver your parcel on their way.
-                <p style={{marginTop:'10px'}}> Over
-                the past few years, we have noticed an expansion for same-day
-                delivery services with traditional customers requiring it only
-                sometimes since consumer anticipations continue to grow even
-                more about speed and comfort. With same-day delivery becoming
-                increasingly popular-our platform ensures fast and
+                <br />
+                Over the past few years, we have noticed an expansion in
+                same-day delivery services. Our platform ensures fast and
                 reliable delivery, allowing customers to receive their packages
                 within hours. This service enhances convenience, reduces wait
                 times, and supports urgent delivery needs.
-                </p>
               </p>
-              <button
-                className="bg-transparent py-3 px-12 font-bold hover:bg-[#089f8d]"
-                style={{
-                  color: "#0ac6ae",
-                  borderRadius: "30px",
-                  border: "2px solid #0ac6ae",
-                  marginTop:'10px'
-                }}
-              >
+
+              <button className="mt-2 py-3 px-10 text-[#0ac6ae] border-2 border-[#0ac6ae] font-bold rounded-full hover:bg-[#089f8d] hover:text-white transition" style={{borderRadius:'35px'}}>
                 Download App
               </button>
             </div>
