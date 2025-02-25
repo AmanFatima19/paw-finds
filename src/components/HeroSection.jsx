@@ -1,28 +1,69 @@
-import React from 'react'
+import React from "react"; 
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
-    <div className="fixed top-0 left-0 w-full bg-cover bg-center w-full" style={{backgroundImage:"url('hero-bg.jpg')"}}>
-      <section className="text-gray-600 body-font relative min-h-screen bg-cover bg-center flex items-center"
-      style={{ backgroundImage: "url('hero-bg1')" }}>
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium" style={{color:'white'}}>Send Packages Across Pakistan 
-        <br class="hidden lg:inline-block"/>Safely & Affordable
-      </h1>
-      <p class="mb-8 leading-relaxed">Connect with verified travelers and send your packages securely accross citites.Save money and time with our trusted delivery network.  </p>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" style={{backgroundColor:'oklch(0.627 0.194 149.214)',color:'white'}}>Get Started</button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" >Learn More</button>
+    
+      <div
+        className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url('hero-bg.jpg')" }}
+      >
+        <div className="absolute inset-0 opacity-50"></div>
+        
+        <div className="relative text-center text-white px-6 mt-20">
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl font-medium"
+          >
+            SEND PACKAGES ACROSS PAKISTAN
+          </motion.h1>
+          
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-5xl font-medium mt-2"
+          >
+            SAFELY & AFFORDABLY
+          </motion.h1>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-xl mt-4"
+          >
+            Connect with verified travelers for Urgent delivery of documents,<br /> luggage and forgotten items around Pakistan.
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="mt-6"
+          >
+            <Link
+              to="/loginform"
+              className="bg-[#0ac6ae] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#089f8d] transition underline"
+            >
+              Login/Register
+            </Link>
+            <Link
+              to="/feedback"
+              className="bg-[#0ac6ae] text-white px-10 py-3 rounded-lg text-lg font-semibold hover:bg-[#089f8d] transition ml-4 underline"
+            >
+              Feedback
+            </Link>
+          </motion.div>
+        </div>
       </div>
-    </div>
-    {/* <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
-    </div> */}
-  </div>
-</section>
-    </div>
-  )
-}
 
-export default HeroSection
+     
+  
+  );
+};
+
+export default HeroSection;
