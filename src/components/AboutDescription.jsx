@@ -24,7 +24,7 @@ function AboutDescription() {
 
               <p
                 className="leading-relaxed"
-                style={{ fontSize: "17px", paddingRight: "80px" }}
+                style={{ fontSize: "17px"}}
               >
                 PakCarry is a peer-to-peer, traveler-based package delivery
                 platform designed to revolutionize urban and inter-city
