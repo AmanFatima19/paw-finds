@@ -16,7 +16,7 @@ function About() {
             </div>
 
             <div className="lg:w-1/2 w-full lg:pl-10 mt-10 lg:mt-0">
-              <h2 className="text-2xl sm:text-4xl font-bold text-black pt-10">
+              <h2 className="text-2xl sm:text-4xl font-bold text-black pt-6">
                 About PakCarry Services
               </h2>
 
