@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Feedback from './pages/Feedback';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn'
+import Dashboard from './pages/Dashboard';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/loginpage" element={<SignIn />} />   
+          <Route path="/profile" element={<Dashboard />} />   
         </Routes>
         <Footer />
     </Router>
