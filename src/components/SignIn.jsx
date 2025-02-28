@@ -96,7 +96,7 @@ const SignIn = ({ isOpen, onClose }) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-                <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaUser className="absolute right-3 top-5 transform -translate-y-1/2 text-gray-400" />
                 {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
               </div>
               <div className="mb-2 relative">
@@ -143,7 +143,7 @@ const SignIn = ({ isOpen, onClose }) => {
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
               />
-              <FaLock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <FaLock className="absolute right-3 top-5 transform -translate-y-1/2 text-gray-400" />
               {errors.confirmPassword && <p className="text-red-500 text-sm">{errors.confirmPassword}</p>}
             </div>
           )}

@@ -41,7 +41,7 @@ function Dashboard() {
               {/* User Info */}
               <div className="flex flex-col items-center mt-3">
                 <FaUserCircle className="text-6xl text-[#0ac6ae] mb-2" />
-                <h2 className="text-lg font-semibold text-gray-700">Aman Fatima</h2>
+                <h2 className="text-lg font-semibold text-gray-700">User Name</h2>
                 <button className="mt-3 bg-[#0ac6ae] px-4 py-2 rounded text-white">
                   Edit Profile
                 </button>
