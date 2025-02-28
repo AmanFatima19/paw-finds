@@ -10,7 +10,7 @@ function FaqSection() {
         Frequently Asked Questions
       </h2>
       <div className="flex justify-center">
-        <div className="w-full max-w-2xl">
+        <div className="w-full max-w-3xl">
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>What are the advantages of PakCarry service?</Accordion.Header>
@@ -46,6 +46,24 @@ function FaqSection() {
               <Accordion.Header>What items are prohibited for delivery via PakCarry?</Accordion.Header>
               <Accordion.Body>
                 PakCarry strictly prohibits the delivery of illegal, hazardous, or restricted items. This includes weapons, explosives, drugs, counterfeit goods, perishable items, and any substances banned by city regulations. Users must comply with the destination city's legal requirements to ensure safe and lawful delivery.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>Can I send items internationally through PakCarry?</Accordion.Header>
+              <Accordion.Body>
+              NO.Currently, PakCarry focuses on domestic package delivery within Pakistan. International shipping may be considered in future updates.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>Can I send items on an urgent basis using PakCarry?</Accordion.Header>
+              <Accordion.Body>
+              The urgency of the weight-sharing arrangement depends on the available travelers during that time.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="8">
+              <Accordion.Header>How does PakCarry ensure the security and reliability of the process?</Accordion.Header>
+              <Accordion.Body>
+              PakCarry implements a rating and review system. This system allows senders to choose trustworthy travelers, ensuring the security and reliability of the weight-sharing process.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
