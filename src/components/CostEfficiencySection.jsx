@@ -20,7 +20,7 @@ function CostEfficiencySection() {
         <h2 className="text-3xl font-bold text-gray-900 mt-2">
           Cost-Efficiency
         </h2>
-        <p className="text-gray-700 mt-4 text-lg">
+        <p className="text-gray-700 mt-4 text-lg" style={{fontSize:'16px'}}>
           Say goodbye to expensive shipping fees. PakCarry offers a cost-efficient 
           solution for sending packages. Our platform connects senders with travelers 
           willing to deliver at lower costs, ensuring affordability and convenience.
