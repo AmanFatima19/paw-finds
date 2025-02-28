@@ -39,7 +39,7 @@ const Navbar = () => {
 
       <nav className="hidden md:flex justify-center space-x-6 text-lg py-2">
         <Link to="/" className="hover:text-gray-800 links">Home</Link>
-        <Link to="/about" className="hover:text-gray-400 links">About Us</Link>
+        <Link to="/about" className="hover:text-gray-400 links">About</Link>
         <Link to="/contact" className="hover:text-gray-400 links">Contact</Link>
         <Link to="/feedback" className="hover:text-gray-400 links">Feedback</Link>
       </nav>

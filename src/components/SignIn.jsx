@@ -14,6 +14,8 @@ const SignIn = ({ isOpen, onClose }) => {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
+ 
+
   const validatePassword = (value) => {
     const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return passwordRegex.test(value);
@@ -105,7 +107,7 @@ const SignIn = ({ isOpen, onClose }) => {
                   value={cnic}
                   onChange={(e) => setCnic(e.target.value)}
                 />
-                <FaIdCard className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaIdCard className="absolute right-3 top-5 transform -translate-y-1/2 text-gray-400" />
                 {errors.cnic && <p className="text-red-500 text-sm">{errors.cnic}</p>}
               </div>
             </>
@@ -118,7 +120,7 @@ const SignIn = ({ isOpen, onClose }) => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            <FaUser className="absolute right-3 top-5 transform -translate-y-1/2 text-gray-400" />
             {errors.username && <p className="text-red-500 text-sm">{errors.username}</p>}
           </div>
           <div className="mb-2 relative">
@@ -129,7 +131,7 @@ const SignIn = ({ isOpen, onClose }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <FaLock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            <FaLock className="absolute right-3 top-5 transform -translate-y-1/2 text-gray-400" />
             {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
           </div>
           {isSignUp && (
