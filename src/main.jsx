@@ -11,6 +11,7 @@ import Feedback from './pages/Feedback';
 import Footer from './components/Footer';
 import SignIn from './components/SignIn'
 import Dashboard from './pages/Dashboard';
+import FaqSection from './components/FaqSection';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/loginpage" element={<SignIn />} />   
           <Route path="/profile" element={<Dashboard />} /> 
+          <Route path="/faq" element={<FaqSection />} /> 
           {/* <Route path="/profile-dashboard" element={<ProfileDashboard />} /> */}
   
         </Routes>
