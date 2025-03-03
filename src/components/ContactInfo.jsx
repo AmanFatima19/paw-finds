@@ -4,7 +4,7 @@ import React from "react";
 function ContactInfo() {
   return (
     <>
-      <section className="text-gray-600 body-font relative">
+      <section className="text-gray-600 body-font relative top-20">
         <div className="container px-5 py-12 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden p-6 flex items-end justify-start relative">
            
@@ -20,7 +20,7 @@ function ContactInfo() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
 
-            <div className="bg-white relative flex flex-wrap py-2 rounded shadow-md w-[90%] mx-auto">
+            <div className="bg-white relative top-5 flex flex-wrap py-2 rounded shadow-md w-[90%] mx-auto">
               <div className="lg:w-1/2 px-6">
                 <h2
                   style={{

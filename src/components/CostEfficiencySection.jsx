@@ -2,7 +2,7 @@ import React from 'react';
 
 function CostEfficiencySection() {
   return (
-    <section className="container mx-auto px-6 pb-20 pt-6 flex flex-col md:flex-row items-center">
+    <section className="container mx-auto px-6 py-26 flex flex-col md:flex-row items-center">
      
       <div className="md:w-[41%] w-full">
         <img 

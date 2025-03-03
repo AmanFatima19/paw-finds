@@ -7,12 +7,12 @@ function HeroSection() {
 
   return (
     <div
-      className="relative w-full h-screen flex items-center justify-center bg-cover bg-center"
+      className="relativew-full h-screen flex items-center justify-center bg-cover bg-center"
       style={{ backgroundImage: "url('hero-bg.jpg')" }}
     >
       <div className="absolute inset-0 opacity-50"></div>
 
-      <div className="relative text-center text-white px-6">
+      <div className="relative top-18 text-center text-white px-6">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
