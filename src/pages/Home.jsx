@@ -4,8 +4,8 @@ import FriendSection from "../components/FriendSection";
 import WhatWeDo from "../components/WhatWeDo";
 import AdoptPlan from "../components/AdoptPlan";
 import Choices from "../components/Coices";
-import WhyChooseUs from "../components/WhyChooseUs";
 import FaqSection from "../components/FaqSection";
+import OurServices from "../components/OurServices";
 
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
       <WhatWeDo />
       <FriendSection />
       <AdoptPlan />
-     <WhyChooseUs />
+     <OurServices />
      <FaqSection />
 
     </div>

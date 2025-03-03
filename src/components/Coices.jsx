@@ -10,7 +10,7 @@ function Choices() {
       <div className="bg-[purple] bg-opacity-60 absolute inset-0"></div> 
       
       <div className="relative z-10 text-center px-4">
-        <h2 className="text-4xl font-bold mb-2">Find your new best friend</h2>
+        <h2 className="text-4xl font-bold mb-2" style={{color:'#F2C119'}}>Find your new best friend</h2>
         <p className="text-lg mb-8">
           Browse pets from our network of shelters and rescues. <br />What you want?
         </p>

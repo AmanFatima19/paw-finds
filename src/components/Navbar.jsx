@@ -15,9 +15,12 @@ function Navbar() {
       <Link to="pets" className="mr-5 link" style={{textDecoration:'none'}}>Pets</Link>
       <Link to="contact" className="mr-5 link" style={{textDecoration:'none'}}>Contact Us</Link>
     </nav>
-    <button className="inline-flex items-center bg-white border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0 text-[#F2C119]">Give a Pet
+    {/* <button className="inline-flex items-center bg-white border-0 py-2 px-3 focus:outline-none hover:bg-['purple'] rounded text-base md:mt-2 text-[#F2C119] mt-2">Give a Pet
       
-    </button>
+    </button> */}
+    <Link to="/give-a-pet" className="px-4 py-2 bg-white rounded" style={{color:'#F2C119',textDecoration:'none'}}>
+  Give a Pet
+</Link>
   </div>
 </header>
     </div>

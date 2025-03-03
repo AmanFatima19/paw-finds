@@ -64,7 +64,7 @@ function AdoptPlan() {
 
         <button
           onClick={() => navigate("/adoption-form")}
-          className="bg-[purple] text-white py-2 px-6 rounded-full shadow-md hover:bg-[#F2C119]"
+          className="bg-[purple] text-[#F2C119] py-2 px-6 rounded-full shadow-md"
         >
           Start Your Adoption Journey
         </button>
