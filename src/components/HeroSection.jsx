@@ -1,63 +1,28 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import SignIn from "./SignIn"; // Importing the Sign-In Component
+import React from 'react'
 
 function HeroSection() {
-  const [isSignInOpen, setSignInOpen] = useState(false);
-
   return (
-    <div
-      className="relativew-full h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('hero-bg.jpg')" }}
-    >
-      <div className="absolute inset-0 opacity-50"></div>
+    <div>
+      <section class="back body-font py-6">
+  <div class="container mx-auto flex py-6 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-start">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">YOUR PETS ARE
+        <br class="hidden lg:inline-block"/><span style={{color:'purple'}}>OUR PRIORITY</span>
+      </h1>
+      <p class="mb-8 leading-relaxed">Connecting loving homes with pets in need, our platform simplifies the adoption process with a user-friendly interface, detailed pet profiles, and secure management. Discover, adopt, and provide a better life for your future furry companions.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-[purple] border-0 py-2 px-7 focus:outline-none hover:bg-[#F2C119] rounded text-lg">Adopt a Pet</button>
 
-      <div className="relative top-18 text-center text-white px-6">
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl font-bold"
-        >
-          SEND PACKAGES ACROSS PAKISTAN
-        </motion.h1>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl font-medium mt-2"
-        >
-          SAFELY & AFFORDABLY
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="text-xl mt-4"
-        >
-          Connect with verified travelers for Urgent delivery of documents,<br /> luggage and forgotten items around Pakistan.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="mt-6"
-        >
-          <button
-            onClick={() => setSignInOpen(true)}
-            className="bg-[#0ac6ae] text-white px-8 py-3 text-lg font-semibold hover:bg-[#089f8d] transition underline mt-6"style={{borderRadius:'10px'}}
-          >
-            Login/Register
-          </button>
-        </motion.div>
       </div>
-
-      <SignIn isOpen={isSignInOpen} onClose={() => setSignInOpen(false)} />
     </div>
-  );
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+  <img class="object-cover object-center rounded-full" alt="hero" src="hero-img.jpeg" />
+</div>
+
+  </div>
+</section>
+    </div>
+  )
 }
 
-export default HeroSection;
+export default HeroSection

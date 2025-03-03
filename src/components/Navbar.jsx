@@ -1,92 +1,27 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
-
-const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(false); 
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+function Navbar() {
   return (
-    <header
-      className={`fixed top-0 left-0 w-full bg-white text-black shadow-md z-50 transition-transform duration-500 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="flex-1 flex justify-center py-2">
-        <Link to="/" className="text-3xl font-bold font-orbitron text-[#111D32] underline">
-          <span className="text-[#0ac6ae]">Pak</span>
-          <span className="logo-carry">Carry</span>
-        </Link>
-      </div>
+    <div>
+      <header className="bg-[purple] text-gray-600 body-font">
+  <div className="container mx-auto flex flex-wrap py-2 flex-col md:flex-row items-center">
+    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" style={{textDecoration:'none'}}>
+      <span className="ml-3 text-2xl mt-2 text-white">Paw</span>
+      <span className="text-2xl mt-2 text-[#F2C119]">Finds</span>
+    </a>
+    <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <Link to="/" className="mr-5 link" style={{textDecoration:'none'}}>Home</Link>
+      <Link to="services" className="mr-5 link" style={{textDecoration:'none'}}>Services</Link>
+      <Link to="pets" className="mr-5 link" style={{textDecoration:'none'}}>Pets</Link>
+      <Link to="contact" className="mr-5 link" style={{textDecoration:'none'}}>Contact Us</Link>
+    </nav>
+    <button className="inline-flex items-center bg-white border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0 text-[#F2C119]">Give a Pet
+      
+    </button>
+  </div>
+</header>
+    </div>
+  )
+}
 
-      <nav className="hidden md:flex justify-center space-x-6 text-lg py-2">
-        <Link to="/" className="hover:text-gray-800 links">Home</Link>
-        <Link to="/about" className="hover:text-gray-400 links">About</Link>
-        <Link to="/contact" className="hover:text-gray-400 links">Contact</Link>
-        <Link to="/feedback" className="hover:text-gray-400 links">Feedback</Link>
-      </nav>
-
-      <button
-        className="md:hidden absolute top-4 right-6 text-2xl focus:outline-none"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </button>
-
-      <nav
-        className={`md:hidden flex flex-col items-center bg-white w-full py-4 space-y-4 text-lg ${
-          menuOpen ? "block" : "hidden"
-        }`}
-      >
-        <Link
-          to="/"
-          className="text-black no-underline hover:text-gray-700"
-          onClick={() => setMenuOpen(false)}
-        >
-          Home
-        </Link>
-        <Link
-          to="/about"
-          className="text-black no-underline hover:text-gray-700"
-          onClick={() => setMenuOpen(false)}
-        >
-          About Us
-        </Link>
-        <Link
-          to="/contact"
-          className="text-black no-underline hover:text-gray-700"
-          onClick={() => setMenuOpen(false)}
-        >
-          Contact
-        </Link>
-        <Link
-          to="/feedback"
-          className="text-black no-underline hover:text-gray-700"
-          onClick={() => setMenuOpen(false)}
-        >
-          Feedback
-        </Link>
-      </nav>
-    </header>
-  );
-};
-
-export default Navbar;
+export default Navbar
