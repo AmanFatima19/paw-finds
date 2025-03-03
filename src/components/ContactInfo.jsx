@@ -4,37 +4,56 @@ import React from "react";
 function ContactInfo() {
   return (
     <>
-      <section className="text-gray-600 body-font relative mt-15">
+      <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-12 mx-auto flex flex-wrap">
-          
           <div className="lg:w-1/2 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden p-6 flex items-end justify-start relative">
+           
             <iframe
-              width="100%"  
-              height="100%"  
+              width="100%"
+              height="100%"
               className="absolute inset-0"
-            
               title="map"
-             
-              src="https://maps.app.google/iHYa3MDYH3tMRjwG7/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13603.879124642775!2d74.27105808466195!3d31.497268981379234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904aef31d9711%3A0x6a7a0b1a1f24e8b0!2sAllama%20Iqbal%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890"
               style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+
             <div className="bg-white relative flex flex-wrap py-2 rounded shadow-md w-[90%] mx-auto">
               <div className="lg:w-1/2 px-6">
-                <h2 style={{fontSize:'20px',fontWeight:'bold',color:'black'}}>
+                <h2
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "black",
+                  }}
+                >
                   ADDRESS
                 </h2>
-                <p className="mt-1">
-                 Allam Iqbal Town,Lahore
-                </p>
+                <p className="mt-1">Allam Iqbal Town,Lahore</p>
               </div>
               <div className="lg:w-1/2 px-6 lg:mt-0">
-                <h2 style={{fontSize:'20px',fontWeight:'bold',color:'black'}}>
+                <h2
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "black",
+                  }}
+                >
                   EMAIL
                 </h2>
-                <a className="mt-1" style={{color:'#0ac6ae'}}>
+                <a className="mt-1" style={{ color: "#0ac6ae" }}>
                   info@pakcarry.com
                 </a>
-                <h2 className="mt-4"  style={{fontSize:'20px',fontWeight:'bold',color:'black'}}>
+                <h2
+                  className="mt-4"
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "black",
+                  }}
+                >
                   PHONE
                 </h2>
                 <p className="mt-2">+92 3345567864</p>
@@ -47,17 +66,14 @@ function ContactInfo() {
               Contact Us
             </h2>
             <div className="relative mb-4">
-              <label
-                htmlFor="name"
-                className="leading-7 text-sm text-gray-600"
-              >
+              <label htmlFor="name" className="leading-7 text-sm text-gray-600">
                 Name
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:outline-[#0ac6ae] text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:outline-[#0ac6ae] text-gray-700 py-1 px-3"
               />
             </div>
             <div className="relative mb-4">
@@ -71,7 +87,7 @@ function ContactInfo() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:outline-[#0ac6ae] text-basetext-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:outline-[#0ac6ae] py-1 px-3"
               />
             </div>
             <div className="relative mb-4">
@@ -88,11 +104,10 @@ function ContactInfo() {
               ></textarea>
             </div>
             <button className="text-white bg-[#0ac6ae] border-0 py-2 px-5 rounded text-lg">
-                <a href="/" style={{color:'white'}}>
-              Send
+              <a href="/" style={{ color: "white" }}>
+                Send
               </a>
             </button>
-           
           </div>
         </div>
       </section>

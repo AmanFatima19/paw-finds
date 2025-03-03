@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutFirstSection() {
   return (
-    <div className="relative top-23">
+    <div className="relative">
      
       <div 
         className="w-[100%] h-[70vh] flex items-center justify-center text-white text-center"

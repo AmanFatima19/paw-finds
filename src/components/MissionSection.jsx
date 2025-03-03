@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center max-w-6xl mx-auto pt-16 px-6">
+    <section className="flex flex-col md:flex-row items-center max-w-6xl mx-auto pt-26 pb-6 px-6">
     
       <div className="w-full md:w-1/2">
         <img

@@ -12,7 +12,7 @@ function HeroSection() {
     >
       <div className="absolute inset-0 opacity-50"></div>
 
-      <div className="relative text-center text-white px-6 mt-20">
+      <div className="relative text-center text-white px-6">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

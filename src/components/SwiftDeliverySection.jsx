@@ -2,7 +2,7 @@ import React from "react";
 
 const SwiftDeliverySection = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <section className="max-w-6xl mx-auto px-6 py-26">
       <div className="grid md:grid-cols-2 items-center gap-10">
      
         <div>
@@ -12,7 +12,7 @@ const SwiftDeliverySection = () => {
           <h2 className="text-4xl font-bold text-gray-900">
             Swift & Timely Delivery
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="text-gray-600 mt-4 pr-2">
             We understand the importance of timely delivery. PakCarry connects
             you with travelers who are ready to send your packages swiftly and
             reliably. No more waiting for traditional shipping methods –

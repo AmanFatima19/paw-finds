@@ -18,7 +18,7 @@ function Dashboard() {
     <div>
       <section className="bg-white pb-10">
         <div className="relative">
-          <div className="absolute left-5 top-0 text-4xl text-[#0ac6ae] cursor-pointer z-50">
+          <div className="absolute left-5 top-0 text-5xl text-[#0ac6ae] cursor-pointer z-50">
             <FaUserCircle onClick={toggleSidebar} />
           </div>
 
